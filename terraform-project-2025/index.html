@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ritesh's Cloud Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      line-height: 1.6;
+    }
+    header, section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #2c3e50, #34495e);
+    }
+    .card {
+      background-color: rgba(0,0,0,0.3);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      background: #1abc9c;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #16a085;
+    }
+    nav {
+      background-color: rgba(0,0,0,0.4);
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      padding: 20px;
+      background-color: rgba(0,0,0,0.2);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div class="card">
+      <h1>Hello, I'm Ritesh 👋</h1>
+      <p>Welcome to my cloud-hosted portfolio powered by AWS S3!</p>
+      <button class="button" onclick="document.getElementById('projects').scrollIntoView()">Learn More</button>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate Cloud and DevOps enthusiast with experience in AWS, Terraform, Linux, and CI/CD pipelines. I love creating resilient, scalable infrastructure and automating everything I can.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Here are a few things I’ve built:</p>
+    <ul style="list-style: none; padding: 0;">
+      <li>✅ Serverless Mail System on AWS (Lambda, SES, S3)</li>
+      <li>✅ Dockerized WordPress + MySQL with Persistent Volumes</li>
+      <li>✅ Automated Infrastructure with Terraform and GitHub Actions</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach out to me at <strong>ritesh@example.com</strong> (replace with your email).</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ritesh's Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
